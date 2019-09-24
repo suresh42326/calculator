@@ -1,4 +1,4 @@
-var express = require('express2'),
+var express = require('express'),
   app = express(),
   port = 3000;
 
