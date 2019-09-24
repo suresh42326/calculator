@@ -1,4 +1,4 @@
-var express = require('express'),
+var express = require('express2'),
   app = express(),
   port = 3000;
 
@@ -8,7 +8,6 @@ var routes = require("./api/routes");
 routes(app);
 
 if (! module.parent) {
-  throw new Error("sample error");
   app.listen(port);
 }
 
