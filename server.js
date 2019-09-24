@@ -8,6 +8,7 @@ var routes = require("./api/routes");
 routes(app);
 
 if (! module.parent) {
+  throw new Error("sample error");
   app.listen(port);
 }
 
